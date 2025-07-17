@@ -57,11 +57,12 @@ graph TD
             style L0 fill:#d4e4ff,stroke:#333,stroke-width:2px
             B --> L0{Mother Node};
             L0 -- "Routes based on broad topic" --> L1;
-            note right of L0
-                - Pre-trained on general data
-                - Acts as the master router
-            end
         end
+
+        %% Defining the note separately and linking it
+        L0_note["<div style='text-align:left;'>- Pre-trained on general data<br>- Acts as the master router</div>"];
+        style L0_note fill:#ffffde,stroke:#333,stroke-width:1px;
+        L0 -.-> L0_note;
 
         subgraph "Level 1: Domain Experts (Nodes created via clustering)"
             style L1 fill:#d2f7d2,stroke:#333,stroke-width:2px
