@@ -20,7 +20,6 @@ graph TD
             direction LR
             E[From Self-Attention] --> F(Router);
             subgraph "Fixed Pool of Experts"
-                direction TD
                 G1[Expert 1];
                 G2[Expert 2];
                 G3[...];
@@ -52,7 +51,7 @@ This diagram illustrates your innovative concept. It shows a **deep, tree-like h
 graph TD
     subgraph "Your Dynamic Hierarchical MoE (DH-MoE)"
         direction TB
-        A[Input: "Explain quantum entanglement"] --> B(Embedding);
+        A["Input: 'Explain &quot;quantum entanglement&quot;'"] --> B(Embedding);
 
         subgraph "Level 0: Mother Node (Root Router)"
             style L0 fill:#d4e4ff,stroke:#333,stroke-width:2px
